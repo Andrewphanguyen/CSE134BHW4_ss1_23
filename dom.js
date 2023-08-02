@@ -35,6 +35,21 @@ function init() {
     element.addEventListener('click', function () {
         remove();
     });
+
+    element = document.getElementById('walkBtn3');
+    element.addEventListener('click', function () {
+        remove2();
+    });
+
+    element = document.getElementById('basicclone');
+    element.addEventListener('click', function () {
+        clone();
+    });
+
+    element = document.getElementById('AdvancedClone');
+    element.addEventListener('click', function () {
+        clone2();
+    });
 }
 
 function walk() {
@@ -279,7 +294,47 @@ function add() {
 }
 
 function remove() {
-  document.body.removeChild(document.body.lastChild);
+   // const el = document.getElementById('controls');
+    
+    let el;
+   
+ 
+    el = document.getElementById('controls');
+    
+    
+   
+
+    el.parentElement.replaceWith(el);
+    el.parentElement.replaceWith(el);
 }
+
+function remove2() {
+    let removes = document.getElementById('output3');
+
+    let el = Array.from(document.getElementsByClassName(removes.value));
+el.forEach(ele => {
+ ele.remove();
+});
+
+
+
+}
+
+function clone() {
+   let el = document.getElementById('p1');
+
+   let el2 = el.cloneNode();
+
+   el.appendChild(el2);
+}
+
+function clone2() {
+    let el = document.getElementsByTagName('template')[0];
+ 
+    let el2 = el.content.cloneNode(true);
+    
+    document.body.appendChild(el2);
+   
+ }
 
 window.addEventListener('DOMContentLoaded', init);

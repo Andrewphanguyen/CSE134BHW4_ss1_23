@@ -160,7 +160,7 @@
         <input type="button" id="removeBtn" value="Remove">
         <!--
 
-          Q4a) Safe Delete
+        x  Q4a) Safe Delete
             add a new button to do a safe delete that deletes all the elements from the bottom up but skips over deleting the buttons and things in the section with all these demo controls
 
           Q4b) Delete by selector
@@ -168,6 +168,10 @@
         -->
 
         <input type="button" id="safeDelete" value="safedelete">
+
+        <input type="button" id="walkBtn3" value="cssbutton">
+        <textarea class="output3" id="output3" rows="4"></textarea>
+
     </fieldset>
 
     <fieldset>
@@ -178,6 +182,9 @@
           Q5b) Add template at the bottom of the page with some HTML markup representing a "card" that would have and title, image, a short text paragraph and link.  This template should be hidden from view using the <template> tag.  Add a button "Advanced Clone" that clones the template and adds it to the DOM.  Generate some boilerplate text to put in the title and text put add in some random value or number, so you can tell each new card that you are adding.  Find a few images at Unsplash or other sites to use as the card image to make it interesting.  The card design is up to you, and you are more than welcome to get inspiration from online for design.  These cards might be what you could use for a portfolio or gallery of some sort so have fun as if you do this correctly, you can use for your portfolio site eventually.  Make sure you are using semantic HTML and simple CSS to style the cards.  You should use CSS variables.
 
         -->
+
+        <input type="button" id="basicclone" value="basicClone">
+        <input type="button" id="AdvancedClone" value="Advanced Clone">
     </fieldset>
 
 </form>
@@ -187,6 +194,18 @@
 <h2>Look out below these will get deleted if you press the buttons above!</h2>
 <p>I am scared of being deleted!</p>
 <p>Me too. Oh noes, here comes the <code>removeChild()</code> method, it's going to delete us!</p>
+
+
+
+<template id="templates">
+    <h2>bee movie</h2>
+    <img src="beemovie.jpg" width="214" height="204">
+    <p>pretty bee</p>
+
+    <a href="url">link text</a>
+
+  </template>
+
 
 <!-- put all your new code in this dom.js file -->
 <script src="dom.js"></script>
