@@ -332,8 +332,16 @@ function clone2() {
     let el = document.getElementsByTagName('template')[0];
  
     let el2 = el.content.cloneNode(true);
-    
     document.body.appendChild(el2);
+    
+   
+
+
+   
+    el2.innerHTML += "new template";
+    
+    el2.innerHTML += Math.random();
+    
    
  }
 
